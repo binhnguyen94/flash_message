@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 
 </head>
-<body> 
-    <div>
-        <button class="btn btn--size-s btn--success">GO TO NEXT APPORVAL</button>
-        <button class="btn btn--size-s btn--warning">OK</button>
-        <button class="btn btn--size-s btn--error">TRY AGAIN</button>
+
+<body>
+
+    <div id="toast">
+        <!-- Success -->
     </div>
+
     <div>
-        <button class="btn btn--success">GO TO NEXT APPORVAL</button>
-        <button class="btn btn--warning">OK</button>
-        <button class="btn btn--error">TRY AGAIN</button>
+        <div onclick="showToastSuccess();" class="btn btn--success">Show toast success</div>
+        <div onclick="showToastInfo();" class="btn btn--info">Show toast info</div>
+        <div onclick="showToastWarning();" class="btn btn--warning">Show toast warning</div>
+        <div onclick="showToastError();" class="btn btn--error">Show toast error</div>
     </div>
-    <div>
-        <button class="btn btn--size-l btn--success">GO TO NEXT APPORVAL</button>
-        <button class="btn btn--size-l btn--warning">OK</button>
-        <button class="btn btn--size-l btn--error">TRY AGAIN</button>
-    </div>
-    
+
     <script src="./assets/index.js"></script>
 </body>
+
 </html>
